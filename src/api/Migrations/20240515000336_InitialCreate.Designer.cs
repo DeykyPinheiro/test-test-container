@@ -11,7 +11,7 @@ using api.Data;
 namespace api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240515000011_InitialCreate")]
+    [Migration("20240515000336_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

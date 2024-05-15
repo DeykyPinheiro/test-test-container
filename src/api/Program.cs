@@ -1,5 +1,7 @@
 
 using api.Data;
+using api.Services;
+using api.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace api
@@ -19,6 +21,8 @@ namespace api
 
             builder.Services.AddDbContext<AppDbContext>(options =>
              options.UseNpgsql(builder.Configuration.GetConnectionString("DataBase")));
+
+            builder.Services.AddScoped<IUserService, UserService>();
 
             var app = builder.Build();
 
