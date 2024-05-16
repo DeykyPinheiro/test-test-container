@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api
 {
-    public class Program
+    public partial class Program
     {
         public static void Main(string[] args)
         {
@@ -41,6 +41,8 @@ namespace api
             app.MapControllers();
 
             app.Run();
+
         }
+
     }
 }
